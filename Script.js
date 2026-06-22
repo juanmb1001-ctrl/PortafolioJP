@@ -20,7 +20,7 @@ const SKILLS_CATEGORIAS = {
   "Frontend": ["HTML", "CSS"],
   "Backend / Frameworks": [".NET"],
   "Bases de datos": ["SQL Server", "MySQL"],
-  "Herramientas y DevOps": ["DBeaver", "Docker", "Railway"],
+  "Herramientas y DevOps": ["DBeaver", "Docker", "Railway", "GitHub"],
 };
 
 // Proyectos destacados
