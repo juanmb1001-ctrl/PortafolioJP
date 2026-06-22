@@ -3,8 +3,8 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 
 
 
-// Habilidades principales (se muestran como barras de progreso)
-// ✏️ Ajusta el "pct" (0-100) según tu nivel real en cada una
+// Habilidades principales 
+
 const SKILLS_PRINCIPALES = [
   { name: "C#", pct: 80 },
   { name: ".NET", pct: 75 },
@@ -14,7 +14,7 @@ const SKILLS_PRINCIPALES = [
   { name: "Docker", pct: 60 },
 ];
 
-// Otras tecnologías agrupadas por categoría (se muestran como etiquetas)
+// Otras tecnologías agrupadas por categoría 
 const SKILLS_CATEGORIAS = {
   "Lenguajes": ["C#", "Python", "JavaScript", "SQL"],
   "Frontend": ["HTML", "CSS"],
@@ -48,7 +48,7 @@ const PROYECTOS = [
   },
 ];
 
-// Experiencia laboral (se muestra como un "git log")
+// Experiencia laboral 
 const EXPERIENCIA = [
   {
     hash: "1",
@@ -84,8 +84,6 @@ function runBootSequence() {
 
   const lines = [
     "> iniciando sistema...",
-    "> cargando perfil.exe",
-    "> conectando con base de datos... OK",
     "> portafolio listo ✓",
   ];
 
@@ -137,7 +135,7 @@ function typeHeroLine() {
 }
 
 /* =========================================================
-   3) Lluvia de código (canvas de fondo)
+   3) Lluvia de código
    ========================================================= */
 function startMatrixRain() {
   const canvas = document.getElementById("matrix-rain");
@@ -154,7 +152,7 @@ function startMatrixRain() {
   resize();
   window.addEventListener("resize", resize);
 
-  if (prefersReducedMotion) return; // deja el canvas estático/transparente
+  if (prefersReducedMotion) return; // deja el canvas transparente
 
   function draw() {
     ctx.fillStyle = "rgba(10, 14, 13, 0.08)";
@@ -173,7 +171,7 @@ function startMatrixRain() {
 }
 
 /* =========================================================
-   4) Navegación: scroll, menú móvil, comandos
+   4) Navegación
    ========================================================= */
 function scrollToSection(id) {
   const target = document.getElementById(id);
@@ -213,7 +211,7 @@ function setupNav() {
 }
 
 /* =========================================================
-   5) Mini terminal funcional (barra de comandos)
+   5) Mini terminal funcional
    ========================================================= */
 const COMMAND_MAP = {
   inicio: "inicio", home: "inicio",
@@ -347,7 +345,7 @@ function renderExperience() {
 }
 
 /* =========================================================
-   7) Animaciones al hacer scroll (reveal + barras)
+   7) Animaciones al hacer scroll 
    ========================================================= */
 function setupRevealOnScroll() {
   const items = document.querySelectorAll(".reveal");
