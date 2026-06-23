@@ -12,15 +12,15 @@
 </head>
 <body>
 
-  <!-- Fondo de lluvia de código -->
+  <!-- Fondo: lluvia de código -->
   <canvas id="matrix-rain" aria-hidden="true"></canvas>
 
-  <!-- Pantalla de "arranque del sistema" -->
+  <!-- Pantalla de arranque del sistema -->
   <div id="boot-screen" aria-hidden="true">
     <pre id="boot-text"></pre>
   </div>
 
-  <!-- ===================== BARRA SUPERIOR TIPO TERMINAL ===================== -->
+  <!-- ====== BARRA SUPERIOR ====== -->
   <header class="term-titlebar">
     <div class="term-window">
       <div class="term-dots">
@@ -28,21 +28,19 @@
         <span class="dot dot-yellow"></span>
         <span class="dot dot-green"></span>
       </div>
-      <span class="term-title">JuanPablo_Portafolio </span>
+      <span class="term-title">juanpablo@portafolio: </span>
     </div>
 
-    
     <nav class="cmd-nav" aria-label="Navegación principal">
-      <button class="cmd-link" data-target="inicio">Inicio</button>
-      <button class="cmd-link" data-target="perfil">Perfil</button>
-      <button class="cmd-link" data-target="estudios">Estudios</button>
-      <button class="cmd-link" data-target="conocimientos">Skills</button>
-      <button class="cmd-link" data-target="proyectos">Proyectos</button>
-      <button class="cmd-link" data-target="experiencia">Experiencia</button>
-      <button class="cmd-link" data-target="contacto">Contacto</button>
+      <button class="cmd-link" data-target="inicio">inicio</button>
+      <button class="cmd-link" data-target="perfil">perfil</button>
+      <button class="cmd-link" data-target="estudios">estudios</button>
+      <button class="cmd-link" data-target="conocimientos">conocimientos</button>
+      <button class="cmd-link" data-target="proyectos">proyectos</button>
+      <button class="cmd-link" data-target="experiencia">experiencia</button>
+      <button class="cmd-link" data-target="contacto">contacto</button>
     </nav>
 
-    
     <form class="cmd-input-wrap" id="cmd-form">
       <label for="cmd-input" class="cmd-prompt-symbol">&gt;</label>
       <input
@@ -61,65 +59,54 @@
   </header>
 
   <main>
-    <!-- ===================== HERO / INICIO ===================== -->
-    <section id="inicio" class="section hero">
-      <div class="hero-terminal">
-        
-          
-          <h1 class="hero-name glitch" data-text="JUAN PABLO MOGOLLÓN BELTRÁN">JUAN PABLO MOGOLLÓN BELTRÁN</h1>
-          <p class="hero-role">&gt; Desarrollador<span class="accent">_</span>de<span class="accent">_</span>Software...<span class="cursor">▋</span></p>
-          <p class="hero-sub"></p>
 
-          <div class="hero-cta">
-            <button class="btn btn-primary" data-target="proyectos">ver proyectos</button>
-            <button class="btn btn-ghost" data-target="contacto">contactar</button>
-          </div>
-        </div>
+    <!-- ====== HERO ====== -->
+<section id="inicio" class="section hero">
+  <div class="hero-terminal">
+    <div class="hero-output">
+      <h1 class="hero-name glitch" data-text="JUAN PABLO MOGOLLÓN BELTRÁN">JUAN PABLO MOGOLLÓN BELTRÁN</h1>
+      <p class="hero-role">&gt; Desarrollador<span class="accent">_</span>de<span class="accent">_</span>Software<span class="cursor">▋</span></p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" data-target="proyectos">proyectos</button>
+        <button class="btn btn-ghost" data-target="contacto">contacto</button>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-    <!-- ===================== PERFIL ===================== -->
-    <section id="perfil" class="section">
-      <p class="section-cmd"></p>
-      <h2 class="section-title"><span class="bracket">[</span>01<span class="bracket">]</span> Perfil profesional</h2>
+    <!-- ====== PERFIL ====== -->
+<section id="perfil" class="section">
+  <h2 class="section-title"><span class="bracket">[</span>01<span class="bracket">]</span> Perfil profesional</h2>
 
-      <div class="window-card reveal">
-        <div class="window-bar">
-          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-          <span class="window-name">perfil.txt</span>
-        </div>
-        <div class="window-body">
-          
-          <p>
-            <span class="line-no">01</span> Soy un desarrollador de software apasionado por crear
-            soluciones limpias, eficientes y bien pensadas. Me gusta entender el problema
-            antes de escribir la primera línea de código.
-          </p>
-          <p>
-            <span class="line-no">02</span> Trabajo principalmente con C# y .NET, además de Python,
-            JavaScript y bases de datos como SQL Server y MySQL. Me gusta aprender
-            herramientas nuevas y aplicar buenas prácticas en cada proyecto.
-          </p>
-          <p>
-            <span class="line-no">03</span> Actualmente buscando oportunidades para seguir creciendo,
-            aportar valor real a un equipo y seguir aprendiendo todos los días.
-          </p>
-        </div>
-      </div>
-    </section>
+  <div class="window-card reveal">
+    <div class="window-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="window-name">perfil.txt</span>
+    </div>
+    <div class="window-body">
+      <p><span class="line-no">01</span> Soy un desarrollador de software apasionado por crear soluciones limpias, eficientes y bien pensadas. Me gusta entender el problema antes de escribir la primera línea de código.</p>
+      <p><span class="line-no">02</span> Trabajo principalmente con C# y .NET, además de Python, JavaScript y bases de datos como SQL Server y MySQL. Me gusta aprender herramientas nuevas y aplicar buenas prácticas en cada proyecto.</p>
+      <p><span class="line-no">03</span> Actualmente buscando oportunidades para seguir creciendo, aportar valor real a un equipo y seguir aprendiendo todos los días.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- ===================== ESTUDIOS ===================== -->
+    <!-- ====== ESTUDIOS ====== -->
     <section id="estudios" class="section">
-      <p class="section-cmd"></p>
       <h2 class="section-title"><span class="bracket">[</span>02<span class="bracket">]</span> Formación académica</h2>
 
       <div class="study-list">
-        
         <div class="study-item reveal">
           <span class="study-icon">📁</span>
           <div class="study-info">
             <p class="study-title">Tecnólogo en Análisis y Desarrollo de Software</p>
-            <p class="study-place">Servicio Nacional de Aprendizaje (SENA)</p>
+            <p class="study-place">Servicio Nacional de Aprendizaje — SENA</p>
             <p class="study-date"># En proceso</p>
           </div>
         </div>
@@ -127,64 +114,62 @@
           <span class="study-icon">📁</span>
           <div class="study-info">
             <p class="study-title">Metodología de la Programación de Sistemas Informáticos</p>
-            <p class="study-place">Servicio Nacional de Aprendizaje (SENA)</p>
+            <p class="study-place">Servicio Nacional de Aprendizaje — SENA</p>
             <p class="study-date"># Finalizado</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== CONOCIMIENTOS / SKILLS ===================== -->
+    <!-- ====== SKILLS ====== -->
     <section id="conocimientos" class="section">
-      <p class="section-cmd"></p>
       <h2 class="section-title"><span class="bracket">[</span>03<span class="bracket">]</span> Conocimientos técnicos</h2>
 
       <h3 class="subtitle">// stack principal</h3>
-      <div class="bars-grid" id="skill-bars">
-      
-      </div>
+      <div class="bars-grid" id="skill-bars"></div>
 
       <h3 class="subtitle">// otras tecnologías y herramientas</h3>
-      <div class="tags-grid" id="skill-tags">
-      
-      </div>
+      <div class="tags-grid" id="skill-tags"></div>
     </section>
 
-    <!-- ===================== PROYECTOS ===================== -->
+    <!-- ====== PROYECTOS ====== -->
     <section id="proyectos" class="section">
-      <p class="section-cmd"> </p>
       <h2 class="section-title"><span class="bracket">[</span>04<span class="bracket">]</span> Proyectos</h2>
-
       <div class="projects-grid" id="projects-grid">
-        <!-- generado dinámicamente desde script.js (array PROYECTOS) -->
+        <!-- se llena automáticamente desde la API de GitHub -->
       </div>
     </section>
 
-    <!-- ===================== EXPERIENCIA ===================== -->
+    <!-- ====== EXPERIENCIA ====== -->
     <section id="experiencia" class="section">
-      <p class="section-cmd"></p>
       <h2 class="section-title"><span class="bracket">[</span>05<span class="bracket">]</span> Experiencia laboral</h2>
 
       <div class="git-log" id="git-log">
-        <!-- generado dinámicamente desde script.js (array EXPERIENCIA) -->
+        <!-- se llena automáticamente desde script.js -->
       </div>
     </section>
 
-    
-    <section id="contacto" class="section section-contact">
-      <p class="section-cmd"></p>
+    <!-- ====== CONTACTO ====== -->
+    <section id="contacto" class="section">
       <h2 class="section-title"><span class="bracket">[</span>06<span class="bracket">]</span> Contacto</h2>
 
       <div class="window-card reveal">
         <div class="window-bar">
-          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-          <span class="window-name"></span>
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="window-name">contacto.sh</span>
         </div>
         <div class="window-body contact-body">
-          
           <p class="contact-line">
             <span class="prompt-mini">&gt;</span> email
-            <button class="copy-btn" id="copy-email" data-value="juanmb1001@gmail.com">juanmb1001@gmail.com <small></small></button>
+            <button class="copy-btn" id="copy-email" data-value="juanmb1001@gmail.com">
+              juanmb1001@gmail.com <small>(copiar)</small>
+            </button>
+          </p>
+          <p class="contact-line">
+            <span class="prompt-mini">&gt;</span> teléfono
+            <span>3026532120</span>
           </p>
           <p class="contact-line">
             <span class="prompt-mini">&gt;</span> github
@@ -192,27 +177,21 @@
           </p>
           <p class="contact-line">
             <span class="prompt-mini">&gt;</span> linkedin
-            <a href="https://linkedin.com/in/juan-pablo-beltran-48944840a/" target="_blank" rel="noopener">linkedin.com/in/juan-pablo-beltran-48944840a/</a>
+            <a href="https://linkedin.com/in/juan-pablo-beltran-48944840a/" target="_blank" rel="noopener">linkedin.com/in/juan-pablo-beltran-48944840a</a>
           </p>
           <p class="contact-line">
             <span class="prompt-mini">&gt;</span> ubicación
-            <span>Bogota - Colombia</span>
+            <span>Bogotá, Colombia</span>
           </p>
-
-          <p class="contact-line">
-            <span class="prompt-mini">&gt;</span> Telefono
-            <span>3026532120</span>
-          </p>
-
-          <p class="contact-end"><span class="ok"></span> > GRACIAS POR SU VISITA!!! 🙂</p>
+          <p class="contact-end"></span> ¡GRACIAS POR SU VISITA! 🙂</p>
         </div>
       </div>
     </section>
+
   </main>
-            
 
   <footer class="site-footer">
-    <p> hecho con amor <span id="year"></span></p>
+    <p>Hecho con amor <span id="year"></span></p>
   </footer>
 
   <script src="script.js"></script>
